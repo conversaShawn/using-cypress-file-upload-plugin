@@ -4,10 +4,10 @@
     "allowJs": true,
     "noEmit": true,
     "types": [
-      "cypress"
+      "cypress", "cypress-file-upload"
     ]
   },
   "include": [
-    "cypress/**/*.js"
+    "edtell-srs-testing-suite/frontend/cypress/**/*.js"
   ]
 }

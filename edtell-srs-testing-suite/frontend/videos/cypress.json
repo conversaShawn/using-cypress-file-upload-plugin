@@ -1,0 +1,6 @@
+{
+    "integrationFolder": "integration/catalog",
+    "fixturesFolder": "fixtures",
+    "supportFile": "support/index.js",
+    "videosFolder": "frontend/videos"
+}
