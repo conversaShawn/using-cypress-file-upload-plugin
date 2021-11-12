@@ -4,6 +4,8 @@
 // type definitions for custom commands like "createDefaultTodos"
 /// <reference types="../support" />
 
+// Testing using fixtures
+
 describe("Upload File Functionality", function () {
   it("Upload sample.pdf", function () {
     //visit website

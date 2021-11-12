@@ -4,19 +4,17 @@
 // type definitions for custom commands like "createDefaultTodos"
 /// <reference types="../support" />
 
-// This is to test uploading on an absolute path
-
-describe("Testing Angies code", () => {
-    before("visit download url", () => {
-      cy.visit('https://www.docdroid.net/');
+describe("Uploading a pdf and reading the file using encoding", () => {
+    before("visit this upload pdf website", () => {
+      cy.visit("https://www.docdroid.net/");
     });
-    it("Add Syllabus", () => {
+    it("uploads file and visible", () => {
       cy.get("#select").contains("Select Files").should("exist");
-      // be sure to update "fixturesFolder": "../../../fixtures" in cypress.json
-      cy.fixture("moveSample.pdf").then((fileContent) => {
+  
+      cy.fixture("sample.pdf").then(fileContent => {
         cy.get("input[type=file]").attachFile({
           fileContent: fileContent.toString(),
-          fileName: "moveSample.pdf",
+          fileName: "sample.pdf",
           mimeType: "application/pdf",
         });
       });

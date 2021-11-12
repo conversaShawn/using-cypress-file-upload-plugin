@@ -2,6 +2,9 @@
 logs
 *.log
 
+cypress/.DS_Store
+.DS_Store
+
 # Runtime data
 pids
 *.pid
